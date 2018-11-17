@@ -65,7 +65,7 @@ section{
   margin:20%;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   .user-name{
     font-size: 72px;
   }
