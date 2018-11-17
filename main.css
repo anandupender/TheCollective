@@ -1,0 +1,58 @@
+body{
+  font-family: 'Share Tech Mono', monospace;
+  /* font-family: 'Roboto Mono', monospace; */
+}
+
+section{
+  height:100px;
+}
+
+.background-title{
+  position: absolute;
+  color: #EEE;
+  font-size: 120px;
+  left:10%;
+  top:40%;
+}
+
+.user-profile{
+  display: flex;
+  width:100%;
+}
+
+.user-photo-container{
+  flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-photo{
+  max-width:100%;
+  width:40%;
+}
+
+.user-name{
+  font-size: 54px;
+  position: absolute;
+  left:65%;
+}
+
+.user-details{
+  padding:10px;
+  position: absolute;
+  left:15%;
+  width:30%;
+  background: white;
+  border: 2px solid #7C2EFE;
+  color:#7C2EFE;
+  margin-top:25%;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: #FF785C;
+  border-radius: 50%;
+  margin:20%;
+}

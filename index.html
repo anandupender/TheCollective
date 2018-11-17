@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Student Highlights</title>
+    <!-- Booooooootstrap -->
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Share+Tech+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+
+    <h1 class="rellax background-title" data-rellax-speed="-6">Collective<br>Designers</h1>
+
+    <div class="main-container">
+      <section></section><section></section>
+      <div class="user-profile">
+        <div class="rellax user-photo-container" data-rellax-speed="2">
+          <img class="user-photo" src="images/daniel.png"/>
+        </div>
+        <div class="rellax user-name" data-rellax-speed="5">
+          Daniel<br>Chan
+        </div>
+        <div class="rellax user-details" data-rellax-speed="3">
+          This is a test information about Daniel. He is a really great guy and does some amazing stuff. Put more here.
+        </div>
+      </div>
+
+      <div class="rellax circle" data-rellax-speed="-3"></div>
+
+        <section></section>
+        <div class="user-profile">
+          <div class="rellax user-photo-container" data-rellax-speed="2">
+            <img class="user-photo" src="images/claire.png"/>
+          </div>
+          <div class="rellax user-name" data-rellax-speed="3">
+            Claire<br>Shu
+          </div>
+          <div class="rellax user-details" data-rellax-speed="1">
+            This is a test information about Daniel. He is a really great guy and does some amazing stuff. Put more here.
+          </div>
+        </div>
+
+        <div class="rellax circle" data-rellax-speed="3" style="background: #FFE462; margin-left:40%;"></div>
+
+        <section></section>
+        <div class="user-profile">
+          <div class="rellax user-photo-container" data-rellax-speed="2">
+            <img class="user-photo" src="images/ashwin.png"/>
+          </div>
+          <div class="rellax user-name" style="margin-top:20%;" data-rellax-speed="4">
+            Ashwin<br>Agarwal
+          </div>
+          <div class="rellax user-details" data-rellax-speed="3">
+            This is a test information about Daniel. He is a really great guy and does some amazing stuff. Put more here.
+          </div>
+        </div>
+    </div>
+
+    <!-- javascript -->
+    <script type="text/javascript" src="rellax.js"></script>
+    <script>
+    	var rellax = new Rellax('.rellax', {
+        // center: true
+        callback: function(position) {
+            // callback every position change
+            console.log(position);
+        }
+      });
+    </script>
+  </body>
+</html>
