@@ -40,7 +40,7 @@ section{
 }
 
 .user-name{
-  font-size: 54px;
+  font-size: 64px;
   position: absolute;
   left:65%;
 }
@@ -66,14 +66,15 @@ section{
 }
 
 @media only screen and (max-width: 600px) {
-  .user-name{
-    font-size: 72px;
-  }
   .user-photo{
-    width:80%;
+    width:70%;
   }
   .user-details{
-    font-size: 14px;
+    font-size:14px;
     width:50%;
+    left:5%;
+  }
+  .background-title{
+    font-size: 64px;
   }
 }
