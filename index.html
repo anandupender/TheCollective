@@ -28,6 +28,9 @@
         <div class="rellax user-details" data-rellax-speed="3">
           This is a test information about Daniel. He is a really great guy and does some amazing stuff. Put more here.
         </div>
+        <a class="user-portfolio-container" target="_blank" href="https://www.anandupender.com/">
+          <div class="user-portfolio"></div>
+        </a>
       </div>
 
       <div class="rellax circle" data-rellax-speed="-3"></div>
@@ -43,6 +46,9 @@
           <div class="rellax user-details" data-rellax-speed="1">
             This is a test information about Claire. She is a really great person and does some amazing stuff. Put more here.
           </div>
+          <a class="user-portfolio-container" style="margin-top:-5%" target="_blank" href="https://www.anandupender.com/">
+            <div class="user-portfolio"></div>
+          </a>
         </div>
 
         <div class="rellax circle" data-rellax-speed="-1" style="background: #FFE462; margin-left:40%;"></div>
@@ -58,11 +64,34 @@
           <div class="rellax user-details" style="margin-top:50%;" data-rellax-speed="3">
             This is a test information about Ashwin. He is a really great guy and does some amazing stuff. Put more here.
           </div>
+          <a class="user-portfolio-container" style="margin-top:-25%" target="_blank" href="https://www.anandupender.com/">
+            <div class="user-portfolio"></div>
+          </a>
         </div>
 
         <div class="rellax circle" data-rellax-speed="5" style="background: #84FFAB; margin-left:85%;"></div>
 
     </div>
+
+    <script>
+      function circularText(txt, radius, classIndex) {
+        txt = txt.split(""),
+          classIndex = document.getElementsByClassName("user-portfolio")[classIndex];
+
+        var deg = 360 / txt.length,
+          origin = 0;
+
+        txt.forEach((ea) => {
+          ea = `<p style='height:${radius}px;position:absolute;left:50px;transform:rotate(${origin}deg);transform-origin:0 100%'>${ea}</p>`;
+          classIndex.innerHTML += ea;
+          origin += deg;
+        });
+      }
+
+      circularText("PORTFOLIO  ", 50, 0);
+      circularText("PORTFOLIO  ", 50, 1);
+      circularText("PORTFOLIO  ", 50, 2);
+    </script>
 
     <!-- javascript -->
     <script type="text/javascript" src="rellax.js"></script>
