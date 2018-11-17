@@ -7,6 +7,13 @@ section{
   height:100px;
 }
 
+#header{
+  background-color: black;
+  height: 150px;
+  transform: skewY(1.5deg);
+  transform-origin: 100% 0;
+}
+
 .background-title{
   position: absolute;
   color: #EEE;
@@ -39,6 +46,7 @@ section{
 }
 
 .user-details{
+  font-size: 18px;
   padding:10px;
   position: absolute;
   left:15%;
@@ -55,4 +63,17 @@ section{
   background: #FF785C;
   border-radius: 50%;
   margin:20%;
+}
+
+@media only screen and (max-width: 800px) {
+  .user-name{
+    font-size: 72px;
+  }
+  .user-photo{
+    width:80%;
+  }
+  .user-details{
+    font-size: 14px;
+    width:50%;
+  }
 }
