@@ -108,15 +108,21 @@ p{
 }
 
 @media only screen and (max-width: 600px) {
+  .user-name{
+    left:35%;
+  }
   .user-photo{
-    width:70%;
+    width:60%;
   }
   .user-details{
     font-size:14px;
-    width:50%;
+    width:30%;
     left:5%;
   }
   .background-title{
     font-size: 64px;
+  }
+  p{
+    font-size: 14px;
   }
 }
