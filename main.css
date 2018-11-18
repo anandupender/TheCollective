@@ -4,14 +4,54 @@ body{
 }
 
 section{
-  height:100px;
+  height:50px;
 }
 
 #header{
-  background-color: black;
-  height: 150px;
-  transform: skewY(1.5deg);
-  transform-origin: 100% 0;
+  /* background-color: black; */
+  height: 800px;
+  width:100vw;
+  /* transform: skewY(1.5deg);
+  transform-origin: 100% 0; */
+  padding:7%;
+  padding-top: 100px;
+}
+h1{
+  font-size: 10vw;
+}
+
+.collective{
+    -webkit-animation: color-change 15s infinite;
+    -moz-animation: color-change 15s infinite;
+    -o-animation: color-change 15s infinite;
+    -ms-animation: color-change 15s infinite;
+    animation: color-change 15s infinite;
+}
+
+@-webkit-keyframes color-change {
+    0% { color: #7029E7; }
+    50% { color: #84FFAB; }
+    100% { color: #7029E7; }
+}
+@-moz-keyframes color-change {
+  0% { color: #7029E7; }
+  50% { color: #84FFAB; }
+  100% { color: #7029E7; }
+}
+@-ms-keyframes color-change {
+  0% { color: #7029E7; }
+  50% { color: #84FFAB; }
+  100% { color: #7029E7; }
+}
+@-o-keyframes color-change {
+  0% { color: #7029E7; }
+  50% { color: #84FFAB; }
+  100% { color: #7029E7; }
+}
+@keyframes color-change {
+  0% { color: #7029E7; }
+  50% { color: #84FFAB; }
+  100% { color: #7029E7; }
 }
 
 .background-title{
@@ -19,7 +59,7 @@ section{
   color: #EEE;
   font-size: 120px;
   left:10%;
-  top:40%;
+  top:100%;
 }
 
 .user-profile{
@@ -36,21 +76,22 @@ section{
 
 .user-photo{
   max-width:100%;
-  width:40%;
+  width:50%;
 }
 
 .user-name{
   font-size: 64px;
   position: absolute;
-  left:65%;
+  left:63%;
+  text-shadow: 3px 3px #ffffff;
 }
 
 .user-details{
   font-size: 18px;
   padding:10px;
   position: absolute;
-  left:15%;
-  width:30%;
+  left:5%;
+  width:35%;
   background: white;
   border: 2px solid #7C2EFE;
   color:#7C2EFE;
@@ -63,11 +104,16 @@ section{
   left:80%;
   margin-top:25%;
   border-radius: 50%;
+  background: #FF785C;
+  background-image: url("images/arrow.png");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
 }
 
 .user-portfolio {
   font-weight: bold;
-  color:#FF785C;
+  color: white;
   width:100px;
   height:100px;
   border-radius: 50%;
@@ -79,23 +125,12 @@ p{
   z-index:2;
 }
 
-.user-portfolio-container:hover{
-  background: #FF785C;
-  background-image: url("images/arrow.png");
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  background-position: center;
-}
-.user-portfolio-container:hover .user-portfolio{
-  color:white;
-}
-
 @-webkit-keyframes rotating {
     from{
         -webkit-transform: rotate(0deg);
     }
     to{
-        -webkit-transform: rotate(360deg);
+        -webkit-transform: rotate(-360deg);
     }
 }
 
@@ -108,8 +143,13 @@ p{
 }
 
 @media only screen and (max-width: 600px) {
+  h3{
+    font-size:18px;
+  }
   .user-name{
     left:35%;
+    margin-top: -25%;
+    font-size: 36px;
   }
   .user-photo{
     width:60%;
@@ -125,4 +165,14 @@ p{
   p{
     font-size: 14px;
   }
+
+  .user-portfolio-container {
+    margin-top:45%;
+    left:60%;
+  }
+  .circle {
+    width: 50px;
+    height: 50px;
+  }
+
 }
